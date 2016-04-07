@@ -1,0 +1,43 @@
+GEM
+  remote: https://gems.ruby-china.org/
+  specs:
+    awesome_print (1.6.1)
+    coderay (1.1.1)
+    cuba (3.5.0)
+      rack (~> 1.6.0)
+    daemons (1.2.3)
+    eventmachine (1.0.9.1)
+    method_source (0.8.2)
+    mysql2 (0.4.3)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    sequel (4.32.0)
+    shotgun (0.9.1)
+      rack (>= 1.0)
+    slop (3.6.0)
+    thin (1.6.4)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  cuba
+  mysql2
+  pry
+  rack
+  rack-protection
+  sequel
+  shotgun
+  thin
+
+BUNDLED WITH
+   1.10.6
