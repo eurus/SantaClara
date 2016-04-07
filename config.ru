@@ -5,6 +5,8 @@ require "cuba"
 require 'mysql2'
 require 'sequel'
 
+Sequel::Model.plugin :timestamps
+
 Dir.glob("./config/*") { |file| require file }
 
 # require the models of the application
