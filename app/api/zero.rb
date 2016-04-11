@@ -32,7 +32,7 @@ Cuba.define do
 
     on "hello" do
       as_json do
-        {"anna":"female","david":"male"}
+        {"0":"hello","1":"world"}
       end
     end
 
