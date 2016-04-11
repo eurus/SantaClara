@@ -1,3 +1,10 @@
+Cuba.use Rack::Cors do
+  allow do
+    origins '*'
+    resource '/*', :headers => :any, :methods => [:get,:post]
+  end
+end
+
 class CheckAuthentication
   include Rack::Utils
 
@@ -19,7 +26,7 @@ class CheckAuthentication
   end
 end
 
-Cuba.use CheckAuthentication
+# Cuba.use CheckAuthentication
 
 Cuba.plugin Cuba::Sugar::As
 

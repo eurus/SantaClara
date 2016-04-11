@@ -2,6 +2,7 @@ source 'https://gems.ruby-china.org/'
 
 # rack related gems
 gem 'rack'
+gem 'rack-cors'
 gem 'rack-protection'
 
 gem 'cuba'

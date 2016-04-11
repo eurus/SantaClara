@@ -14,6 +14,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.6.4)
+    rack-cors (0.4.0)
     rack-protection (1.5.3)
       rack
     sequel (4.32.0)
@@ -34,6 +35,7 @@ DEPENDENCIES
   mysql2
   pry
   rack
+  rack-cors
   rack-protection
   sequel
   shotgun

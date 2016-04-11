@@ -1,13 +1,13 @@
 # require cuba as the base
 require "cuba"
-
+require 'rack/cors'
 # require the sequel
 require 'mysql2'
 require 'sequel'
 
 Sequel::Model.plugin :timestamps
 
-Dir.glob("./config/*") { |file| require file }
+Dir.glob("./config/database.rb") { |file| require file }
 
 # require the models of the application
 Dir.glob("./app/models/*") { |file| require file }
