@@ -1,8 +1,10 @@
 # SantaClara
 
-Framework based on Cuba
-
 [TOC]
+
+## About this project
+
+This is a framework based on Cuba and sequel. It has some basic feature for a web app. This means you can write anything you want to build a web application.
 
 ## Get Start
 
