@@ -1,6 +1,7 @@
 # This will connect to the database
-DB = Sequel.connect(adapter: 'mysql2',
-                    user: 'username',
-                    password: "password",
-                    host: "localhost" ,
-                    database: "awesome")
+require 'yaml'
+
+config = YAML.load_file('./config/database.yml')
+
+DB = Sequel.connect(config["#{ENV['ST_ENV']}"])
+

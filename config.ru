@@ -7,8 +7,7 @@ require 'sequel'
 
 Sequel::Model.plugin :timestamps
 
-Dir.glob("./config/database.rb") { |file| require file }
-
+require "./config/database"
 # require the models of the application
 Dir.glob("./app/models/*") { |file| require file }
 
