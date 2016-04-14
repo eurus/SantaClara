@@ -9,9 +9,7 @@ namespace :db do
   require 'mysql2'
   require 'sequel'
   Sequel.extension :migration, :core_extensions
-  
-  Dir.glob("./config/database.rb") { |file| require file }
-
+  require "./config/database"
   desc "Prints current schema version"
   task :version do
     version = if DB.tables.include?(:schema_info)
